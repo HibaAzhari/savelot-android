@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- text view to displaying heading of application -->
+    <TextView
+        android:id="@+id/idTVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Read SMS in Android"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- on below line creating a text view for displaying the sms header -->
+    <TextView
+        android:id="@+id/idTVNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:text="NUmber"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- on below line creating a text view for displaying the sms body -->
+    <TextView
+        android:id="@+id/idTVSMSBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:text="SMS Body"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- on below line creating a text view for displaying the date on which sms have recieved. -->
+    <TextView
+        android:id="@+id/idTVSMSDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVSMSBody"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:text="SMS Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+</RelativeLayout>
